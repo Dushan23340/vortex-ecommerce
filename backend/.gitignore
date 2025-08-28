@@ -51,3 +51,4 @@ Thumbs.db
 # Temporary folders
 tmp/
 temp/
+.vercel

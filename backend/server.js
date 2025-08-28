@@ -35,15 +35,13 @@ const corsOptions = {
     'http://localhost:5179',  // Current admin port
     'http://localhost:3000',   // React default
     
-    // Production URLs (replace with your actual Vercel domains)
-    'https://your-frontend-domain.vercel.app',
-    'https://your-admin-domain.vercel.app',
-    'https://your-custom-domain.com',
-    'https://www.your-custom-domain.com',
+    // Production URLs - Vercel deployed applications
+    'https://vortex-frontend-bp5wntbsa-dushans-projects-966fc3a3.vercel.app',
+    'https://vortex-admin-5id903yz5-dushans-projects-966fc3a3.vercel.app',
     
-    // Add your actual production domains here
-    // Example: 'https://vortex-ecommerce.vercel.app'
-    // Example: 'https://vortex-admin.vercel.app'
+    // Add your custom domains here when available
+    // 'https://your-custom-domain.com',
+    // 'https://www.your-custom-domain.com',
   ],
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS', 'PATCH'],
