@@ -25,6 +25,7 @@ app.use(express.json())
 // CORS configuration for frontend access
 const corsOptions = {
   origin: [
+    // Development URLs
     'http://localhost:5173',  // Vite default
     'http://localhost:5174',  // Alternative Vite port
     'http://localhost:5175',  // Previous frontend port
@@ -32,7 +33,17 @@ const corsOptions = {
     'http://localhost:5177',  // Current frontend port
     'http://localhost:5178',  // Current frontend port
     'http://localhost:5179',  // Current admin port
-    'http://localhost:3000'   // React default
+    'http://localhost:3000',   // React default
+    
+    // Production URLs (replace with your actual Vercel domains)
+    'https://your-frontend-domain.vercel.app',
+    'https://your-admin-domain.vercel.app',
+    'https://your-custom-domain.com',
+    'https://www.your-custom-domain.com',
+    
+    // Add your actual production domains here
+    // Example: 'https://vortex-ecommerce.vercel.app'
+    // Example: 'https://vortex-admin.vercel.app'
   ],
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS', 'PATCH'],
