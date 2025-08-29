@@ -41,6 +41,10 @@ const corsOptions = {
     'https://vortex-frontend-j6cl7870z-dushans-projects-966fc3a3.vercel.app',
     'https://vortex-admin-p2quko6jz-dushans-projects-966fc3a3.vercel.app',
     
+    // Additional recent deployments
+    'https://vortex-backend-krzw00xyz-dushans-projects-966fc3a3.vercel.app',
+    'https://vortex-backend-caarxczcs-dushans-projects-966fc3a3.vercel.app',
+    
     // Production URLs - Previous deployments (Keep for compatibility)
     'https://vortex-frontend-bp5wntbsa-dushans-projects-966fc3a3.vercel.app',
     'https://vortex-admin-5id903yz5-dushans-projects-966fc3a3.vercel.app',
