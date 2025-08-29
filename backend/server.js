@@ -35,15 +35,9 @@ const corsOptions = {
     'http://localhost:5179',  // Current admin port
     'http://localhost:3000',   // React default
     
-    // Production URLs - Vercel deployed applications (Current)
-    'https://vortex-frontend-omiqn1b60-dushans-projects-966fc3a3.vercel.app',
-    'https://vortex-admin-hylbcpsrk-dushans-projects-966fc3a3.vercel.app',
-    'https://vortex-frontend-j6cl7870z-dushans-projects-966fc3a3.vercel.app',
-    'https://vortex-admin-p2quko6jz-dushans-projects-966fc3a3.vercel.app',
-    
-    // Additional recent deployments
-    'https://vortex-backend-krzw00xyz-dushans-projects-966fc3a3.vercel.app',
-    'https://vortex-backend-caarxczcs-dushans-projects-966fc3a3.vercel.app',
+    // Production URLs - Vercel deployed applications (Current Fresh Deployment)
+    'https://vortex-frontend-44y37yjpp-dushans-projects-966fc3a3.vercel.app',
+    'https://vortex-admin-98u8av23b-dushans-projects-966fc3a3.vercel.app',
     
     // Production URLs - Previous deployments (Keep for compatibility)
     'https://vortex-frontend-bp5wntbsa-dushans-projects-966fc3a3.vercel.app',
