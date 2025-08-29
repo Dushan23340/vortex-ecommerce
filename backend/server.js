@@ -39,13 +39,10 @@ const corsOptions = {
     process.env.FRONTEND_URL,
     process.env.ADMIN_URL,
     
-    // Stable Production URLs (recommended)
+    // ⭐ STABLE PRODUCTION URLs (These NEVER change!) ⭐
     'https://vortex-frontend.vercel.app',
     'https://vortex-admin.vercel.app',
     
-    // Current deployment URLs (fallback)
-    'https://vortex-frontend-44y37yjpp-dushans-projects-966fc3a3.vercel.app',
-    'https://vortex-admin-98u8av23b-dushans-projects-966fc3a3.vercel.app',
     
     // Add your custom domains here when available
     // 'https://your-custom-domain.com',
