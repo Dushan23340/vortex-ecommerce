@@ -39,9 +39,11 @@ const corsOptions = {
     process.env.FRONTEND_URL,
     process.env.ADMIN_URL,
     
-    // ⭐ STABLE PRODUCTION URLs (These NEVER change!) ⭐
-    'https://vortex-frontend.vercel.app',
-    'https://vortex-admin.vercel.app',
+    
+    // Additional stable URLs from the setup script
+    'https://vortex-clothing-frontend.vercel.app',
+    'https://vortex-clothing-admin.vercel.app',
+    'https://vortex-clothing-backend.vercel.app',
     
     
     // Add your custom domains here when available
