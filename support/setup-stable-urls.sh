@@ -45,18 +45,18 @@ echo "   - Go to https://vercel.com/dashboard"
 echo "   - Click on 'vortex-backend' project"
 echo "   - Go to Settings → Domains"
 echo "   - Click 'Add Domain'"
-echo "   - Add: vortex-backend.vercel.app"
+echo "   - Add: vortex-clothing-backend.vercel.app"
 echo "   - Click 'Add'"
 echo ""
 echo "2. 📱 Frontend Project:"
-echo "   - Click on 'vortex-frontend' project"
+echo "   - Click on 'vortex-clothing-frontend' project"
 echo "   - Go to Settings → Domains"
 echo "   - Add: vortex-frontend.vercel.app"
 echo ""
 echo "3. 👨‍💼 Admin Project:"
 echo "   - Click on 'vortex-admin' project"
 echo "   - Go to Settings → Domains"
-echo "   - Add: vortex-admin.vercel.app"
+echo "   - Add: vortex-clothing-admin.vercel.app"
 echo ""
 
 read -p "Have you completed the above steps? (y/N): " domains_added
@@ -77,8 +77,8 @@ print_status "Updating backend environment variables..."
 cd backend
 
 echo "Adding stable URLs to backend environment..."
-echo "https://vortex-frontend.vercel.app" | npx vercel env add FRONTEND_URL production 2>/dev/null || true
-echo "https://vortex-admin.vercel.app" | npx vercel env add ADMIN_URL production 2>/dev/null || true
+echo "https://vortex-clothing-frontend.vercel.app" | npx vercel env add FRONTEND_URL production 2>/dev/null || true
+echo "https://vortex-clothing-admin.vercel.app" | npx vercel env add ADMIN_URL production 2>/dev/null || true
 
 print_success "Backend environment variables updated"
 
@@ -91,8 +91,8 @@ npx vercel env rm VITE_BACKEND_URL production --yes 2>/dev/null || true
 npx vercel env rm VITE_API_URL production --yes 2>/dev/null || true
 
 echo "Adding stable backend URLs to frontend..."
-echo "https://vortex-backend.vercel.app" | npx vercel env add VITE_BACKEND_URL production
-echo "https://vortex-backend.vercel.app/api" | npx vercel env add VITE_API_URL production
+echo "https://vortex-clothing-backend.vercel.app" | npx vercel env add VITE_BACKEND_URL production
+echo "https://vortex-clothing-backend.vercel.app/api" | npx vercel env add VITE_API_URL production
 
 # Add other frontend env vars
 echo "1211149" | npx vercel env add VITE_PAYHERE_MERCHANT_ID production 2>/dev/null || true
@@ -110,8 +110,8 @@ npx vercel env rm VITE_BACKEND_URL production --yes 2>/dev/null || true
 npx vercel env rm VITE_API_URL production --yes 2>/dev/null || true
 
 echo "Adding stable backend URLs to admin..."
-echo "https://vortex-backend.vercel.app" | npx vercel env add VITE_BACKEND_URL production
-echo "https://vortex-backend.vercel.app/api" | npx vercel env add VITE_API_URL production
+echo "https://vortex-clothing-backend.vercel.app" | npx vercel env add VITE_BACKEND_URL production
+echo "https://vortex-clothing-backend.vercel.app/api" | npx vercel env add VITE_API_URL production
 echo "production" | npx vercel env add VITE_NODE_ENV production 2>/dev/null || true
 
 print_success "Admin environment variables updated"
@@ -142,8 +142,8 @@ print_status "🔍 Step 3: Testing the deployment..."
 
 echo ""
 echo "Testing backend API..."
-if curl -s "https://vortex-backend.vercel.app" | grep -q "API is working"; then
-    print_success "✅ Backend stable URL is working: https://vortex-backend.vercel.app"
+if curl -s "https://vortex-clothing-backend.vercel.app" | grep -q "API is working"; then
+    print_success "✅ Backend stable URL is working: https://vortex-clothing-backend.vercel.app"
 else
     print_warning "⚠️  Backend stable URL not responding yet (may take a few minutes)"
 fi
@@ -154,14 +154,14 @@ print_success "🎉 Stable URL Setup Complete!"
 echo "======================================================"
 echo ""
 echo "Your stable URLs (these NEVER change):"
-echo "🔧 Backend:  https://vortex-backend.vercel.app"
-echo "📱 Frontend: https://vortex-frontend.vercel.app"
-echo "👨‍💼 Admin:    https://vortex-admin.vercel.app"
+echo "🔧 Backend:  https://vortex-clothing-backend.vercel.app"
+echo "📱 Frontend: https://vortex-clothing-frontend.vercel.app"
+echo "👨‍💼 Admin:    https://vortex-clothing-admin.vercel.app"
 echo ""
 echo "Next steps:"
 echo "1. Wait 2-3 minutes for DNS propagation"
-echo "2. Test your frontend: https://vortex-frontend.vercel.app"
-echo "3. Test your admin: https://vortex-admin.vercel.app"
+echo "2. Test your frontend: https://vortex-clothing-frontend.vercel.app"
+echo "3. Test your admin: https://vortex-clothing-admin.vercel.app"
 echo "4. Login to admin with: admin@gmail.com / vortex123"
 echo ""
 print_success "🎯 No more circular deployment problems!"

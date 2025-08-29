@@ -5,12 +5,6 @@ node_modules/
 */node_modules/
 
 # Environment files (CRITICAL - Never commit!)
-.env
-.env.local
-.env.development
-.env.staging
-.env.production
-.env.test
 */.env
 */.env.local
 */.env.development
@@ -38,7 +32,6 @@ yarn-error.log*
 Thumbs.db
 
 # IDE files
-.vscode/
 .idea/
 *.swp
 *.swo
@@ -53,3 +46,4 @@ uploads/
 
 # Production deployment files (will be created during deployment)
 .vercel
+config.bat
