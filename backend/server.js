@@ -35,21 +35,22 @@ const corsOptions = {
     'http://localhost:5179',  // Current admin port
     'http://localhost:3000',   // React default
     
-    // Production URLs - Vercel deployed applications (Current Fresh Deployment)
+    // Production URLs - Dynamic from environment variables
+    process.env.FRONTEND_URL,
+    process.env.ADMIN_URL,
+    
+    // Stable Production URLs (recommended)
+    'https://vortex-frontend.vercel.app',
+    'https://vortex-admin.vercel.app',
+    
+    // Current deployment URLs (fallback)
     'https://vortex-frontend-44y37yjpp-dushans-projects-966fc3a3.vercel.app',
     'https://vortex-admin-98u8av23b-dushans-projects-966fc3a3.vercel.app',
-    
-    // Production URLs - Previous deployments (Keep for compatibility)
-    'https://vortex-frontend-bp5wntbsa-dushans-projects-966fc3a3.vercel.app',
-    'https://vortex-admin-5id903yz5-dushans-projects-966fc3a3.vercel.app',
-    'https://vortex-frontend-4h910ysbz-dushans-projects-966fc3a3.vercel.app',
-    'https://vortex-admin-m86fvpn0y-dushans-projects-966fc3a3.vercel.app',
-    'https://vortex-admin-23sqd7smc-dushans-projects-966fc3a3.vercel.app',
     
     // Add your custom domains here when available
     // 'https://your-custom-domain.com',
     // 'https://www.your-custom-domain.com',
-  ],
+  ].filter(Boolean), // Remove undefined values
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS', 'PATCH'],
   allowedHeaders: [
